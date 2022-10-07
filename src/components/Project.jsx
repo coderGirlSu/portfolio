@@ -50,8 +50,8 @@ const Project = () => {
         return (
           <div key={index}>
             <Card sx={{ maxWidth: 345 }}>
-            {/* {project.name}
-             {project.url} */}
+            {project.name}
+             {project.url}
               <CardMedia
                 component="img"
                 height="194"
