@@ -36,33 +36,7 @@ const Project = () => {
         </a>
       ),
     },
-    {
-      title: "Portfolio",
-      description: "",
-      url: (
-        <a target="_black" href="https://codergirlsu.github.io/src/">
-          <img src="./images/default.png" alt="portfolio" />
-        </a>
-      ),
-    },
-    {
-        title: "Portfolio",
-        description: "",
-        url: (
-          <a target="_black" href="https://codergirlsu.github.io/src/">
-            <img src="./images/default.png" alt="portfolio" />
-          </a>
-        ),
-      },
-      {
-        title: "Portfolio",
-        description: "",
-        url: (
-          <a target="_black" href="https://codergirlsu.github.io/src/">
-            <img src="./images/default.png" alt="portfolio" />
-          </a>
-        ),
-      },
+     
   ];
 
   return (
