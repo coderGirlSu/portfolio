@@ -1,8 +1,8 @@
 const Project = () => {
   const projects = [
     {
-      name: "Fruit Picking Game",
-      software: "React",
+      title: "Fruit Picking Game",
+      description: "React",
       url: (
         <a target="_black" href="https://fruit.codergirlsu.dev">
           <img src="./images/fruit.png" alt="fruit_packing_game" />
@@ -10,17 +10,35 @@ const Project = () => {
       ),
     },
     {
-      name: "Emoji Search",
-      software: "React",
+      title: "Emoji Search",
+      description: "React",
       url: (
         <a target="_black" href="https://emojis.codergirlsu.dev">
-          <img src="./images/fruit.png" alt="emoji_search_game" />
-        </a >
+          <img src="./images/emoji.png" alt="emoji_search_game" />
+        </a>
       ),
     },
     {
-      name: "Portfolio",
-      software: "React",
+      title: "Portfolio",
+      description: "HTML CSS",
+      url: (
+        <a target="_black" href="https://codergirlsu.github.io/src/">
+          <img src="./images/portfolio.png" alt="portfolio" />
+        </a>
+      ),
+    },
+    {
+      title: "Portfolio",
+      description: "React",
+      url: (
+        <a target="_black" href="https://codergirlsu.github.io/src/">
+          <img src="./images/fruit.png" alt="portfolio" />
+        </a>
+      ),
+    },
+    {
+      title: "Portfolio",
+      description: "React",
       url: (
         <a target="_black" href="https://codergirlsu.github.io/src/">
           <img src="./images/fruit.png" alt="portfolio" />
@@ -30,15 +48,22 @@ const Project = () => {
   ];
 
   return (
-    <div className="projects">
+    <>
+    <h1 className="title">PORTFOLIO</h1>
+    <div className="container">
       {projects.map((project, index) => {
-        return ( 
-        <div key={index}>
-            {project.name}
-             {project.url}
-        </div> )
+        return (
+          <div key={index} className="image-box">
+            <div>{project.url}</div>
+            <div class="description"> </div>
+       
+          </div>
+        );
       })}
     </div>
+    
+    </>
+    
   );
 };
 

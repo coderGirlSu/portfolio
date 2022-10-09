@@ -1,0 +1,78 @@
+.title {
+    color: rgb(37, 37, 37);
+    font-family: 'Silkscreen', cursive;
+    font-size: 50px;
+    margin-left: 10%;
+    padding-left: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-content: center;
+    /* the container min-width at lest 600px, so won't squish the image  */
+    min-width: 600px;
+
+    /* position the container absolute with the closest parent level has position(which is browser) */
+    position:absolute;
+    top:10%;
+    left:10%;
+    right:10%;
+}
+
+.image-box {
+    width: 30vh;
+    height: 30vh;
+    background-color: rgba(34, 34, 34, 0.46);
+    margin: 20px;
+    overflow: hidden; /* hidden image if over this box size(30vh ~ 30vh) */
+     /* position the image-box naturally with same level siblings (which is description) */
+    position:relative;
+    border-radius: 3%;
+}
+
+
+.image-box:hover {
+/* add shadow */
+/* text-align: center; */
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 7px 9px 0 rgb(0 0 0 / 24%);
+ /* delay show shadow 0.3 seconds */
+transition: 0.3s;
+}
+
+/* when the image-box on hover model, the img should do... */
+.image-box:hover img { 
+    filter: grayscale(0%); 
+}
+
+/* when the image-box on hover model, the description should do... */
+.image-box:hover .description {
+    visibility: hidden;
+}
+
+.image-box img{
+    width:100%;
+    filter: grayscale(100%); 
+}
+
+.image-box .description {
+    color: rgb(130, 166, 39);
+    font-family: 'Silkscreen', cursive;
+    font-size: 20px;
+    /* position the description absolute with the closest parent level has position(which is image-box) */
+    position:absolute;
+    top: 18%;
+    left: 20%;
+    right: 20%;
+  }
+
+
+
+
+
+  
+  
+
+
