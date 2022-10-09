@@ -12,8 +12,6 @@
     flex-wrap: wrap;
     justify-content:flex-start;
     align-content: center;
-    /* the container min-width at lest 600px, so won't squish the image  */
-    min-width: 600px;
 
     /* position the container absolute with the closest parent level has position(which is browser) */
     position:absolute;
