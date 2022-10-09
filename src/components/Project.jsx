@@ -19,8 +19,17 @@ const Project = () => {
       ),
     },
     {
+      title: "Marketplace",
+      description: "Rails",
+      url: (
+        <a target="_black" href="https://codergirlsu.github.io/src/">
+          <img src="./images/default.png" alt="marketplace" />
+        </a>
+      ),
+    },
+    {
       title: "Portfolio",
-      description: "HTML CSS",
+      description: "",
       url: (
         <a target="_black" href="https://codergirlsu.github.io/src/">
           <img src="./images/portfolio.png" alt="portfolio" />
@@ -29,27 +38,36 @@ const Project = () => {
     },
     {
       title: "Portfolio",
-      description: "React",
+      description: "",
       url: (
         <a target="_black" href="https://codergirlsu.github.io/src/">
-          <img src="./images/fruit.png" alt="portfolio" />
+          <img src="./images/default.png" alt="portfolio" />
         </a>
       ),
     },
     {
-      title: "Portfolio",
-      description: "React",
-      url: (
-        <a target="_black" href="https://codergirlsu.github.io/src/">
-          <img src="./images/fruit.png" alt="portfolio" />
-        </a>
-      ),
-    },
+        title: "Portfolio",
+        description: "",
+        url: (
+          <a target="_black" href="https://codergirlsu.github.io/src/">
+            <img src="./images/default.png" alt="portfolio" />
+          </a>
+        ),
+      },
+      {
+        title: "Portfolio",
+        description: "",
+        url: (
+          <a target="_black" href="https://codergirlsu.github.io/src/">
+            <img src="./images/default.png" alt="portfolio" />
+          </a>
+        ),
+      },
   ];
 
   return (
     <>
-    <h1 className="title">PORTFOLIO</h1>
+    <h1 className="title">Portfolio</h1>
     <div className="container">
       {projects.map((project, index) => {
         return (
