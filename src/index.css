@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-content: center;
+    /* the container min-width at lest 600px, so won't squish the image  */
+    min-width: 600px;
+
+    /* position the container absolute with webpage(parent level) */
+    position:absolute;
+    top:20%;
+    left:20%;
+    right:20%;
+}
+
+.image-box {
+    width: 30vh;
+    height: 30vh;
+    background-color: rgb(224, 224, 224);
+    margin: 20px;
+    overflow: hidden; /* hidden image if over this box size(30vh ~ 30vh) */
+}
+
+
+.image-box:hover {
+/* add shadow */
+text-align: center;
+box-shadow: 0 4px 8px 0 rgb(0 0 0 / 9%), 0 7px 9px 0 rgb(0 0 0 / 24%);
+ /* delay show shadow 0.3 seconds */
+transition: 0.3s;
+
+}
+
+
+.image-box img{
+    width:100%;
+    filter: grayscale(100%); 
+}
+
+
+.image-box img:hover{
+    filter: grayscale(0%); 
+}
+
+
+  
+  
+
+

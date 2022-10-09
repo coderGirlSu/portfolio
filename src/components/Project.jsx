@@ -1,7 +1,7 @@
 const Project = () => {
   const projects = [
     {
-      name: "Fruit Picking Game",
+      title: "Fruit Picking Game",
       software: "React",
       url: (
         <a target="_black" href="https://fruit.codergirlsu.dev">
@@ -10,33 +10,50 @@ const Project = () => {
       ),
     },
     {
-      name: "Emoji Search",
+      title: "Emoji Search",
       software: "React",
       url: (
         <a target="_black" href="https://emojis.codergirlsu.dev">
-          <img src="./images/fruit.png" alt="emoji_search_game" />
+          <img src="./images/emoji.png" alt="emoji_search_game" />
         </a >
       ),
     },
     {
-      name: "Portfolio",
+      title: "Portfolio",
       software: "React",
       url: (
         <a target="_black" href="https://codergirlsu.github.io/src/">
-          <img src="./images/fruit.png" alt="portfolio" />
+          <img src="./images/portfolio.png" alt="portfolio" />
         </a>
       ),
     },
+    {
+        title: "Portfolio",
+        software: "React",
+        url: (
+          <a target="_black" href="https://codergirlsu.github.io/src/">
+            <img src="./images/fruit.png" alt="portfolio" />
+          </a>
+        ),
+      },
+      {
+        title: "Portfolio",
+        software: "React",
+        url: (
+          <a target="_black" href="https://codergirlsu.github.io/src/">
+            <img src="./images/fruit.png" alt="portfolio" />
+          </a>
+        ),
+      },
   ];
 
   return (
-    <div className="projects">
+    <div className="container">
       {projects.map((project, index) => {
         return ( 
-        <div key={index}>
-            {project.name}
-             {project.url}
-        </div> )
+      
+             <div key={index} className="image-box">{project.url}</div>
+       )
       })}
     </div>
   );
