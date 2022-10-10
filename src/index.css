@@ -1,11 +1,13 @@
 .title {
     color: rgb(94, 94, 94);
     font-family: 'Silkscreen', cursive;
-    font-size: 50px;
+    font-size:4.5vw;
     margin-left: 10%;
     padding-left: 10px;
+    position: relative;
 }
 
+/* projects container */
 .container {
     display: flex;
     flex-direction: row;
@@ -14,7 +16,7 @@
     align-content: center;
 
     /* position the container absolute with the closest parent level has position(which is browser) */
-    position:absolute;
+    position: relative;
     top:10%;
     left:10%;
     right:10%;
