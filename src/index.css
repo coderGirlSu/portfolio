@@ -1,7 +1,8 @@
 .title {
     color: rgb(94, 94, 94);
     font-family: 'Silkscreen', cursive;
-    font-size:4.5vw;
+    /* font size minimum 10pv, maximum 65px */
+    font-size: min(10vw, 65px); 
     margin-left: 10%;
     padding-left: 10px;
     position: relative;
