@@ -1,6 +1,5 @@
 
 const Project = () => {
-
   const cover = [
     {
       name: "Su Zhang",
@@ -9,7 +8,6 @@ const Project = () => {
       alt: "Su Zhang",
     },
   ]
-
 
   const about = [
     {
@@ -200,19 +198,15 @@ const Project = () => {
       {cover.map((cover, index) => {
         return (
           <div key={index} className="i-container">
-
             <div className="i-top">
               <div className="name">{cover.name}</div>
-              
             </div>
             <div className="i-middle">
               <img src={cover.photo} alt={cover.alt}/>
             </div>
-
             <div className="i-bottom">
               <div className="position">{cover.position}</div>  
             </div>
-
           </div>
         );
       })}
@@ -259,7 +253,6 @@ const Project = () => {
               </div>
             );
           })}
-          
         </div>
       </div>
 
@@ -275,9 +268,7 @@ const Project = () => {
             )})}
         </div>
       </div>
-
-       
-              
+      
        <div className="footer-container">
        <div className="line"></div>   
         {about.map((about, index) => {
@@ -291,14 +282,7 @@ const Project = () => {
          )})}
        </div>
     </div>
-
-
-            
-    
-
   );
 };
-
-
 
 export default Project;
