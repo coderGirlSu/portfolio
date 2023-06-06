@@ -1,79 +1,305 @@
-.title {
-    color: rgb(163, 195, 82);
-    font-family: 'Silkscreen', cursive;
-    /* font size minimum 10pv, maximum 65px */
-    font-size: min(10vw, 65px); 
-    margin-left: 10%;
-    padding-left: 10px;
-    position: relative;
+/* About me css: */
+.i-container {
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    height: 100vh;
+    position:relative;
+    justify-content: center;
+
+}
+
+.i-container .i-top {
+    position: absolute;
+    z-index: 10;
+    top: 12%;
+}
+
+.i-container .i-middle {
+    padding: 30px;
+}
+.i-container .i-middle img {
+    width: 45vh;
+    transform: rotate(8deg);
+}
+
+.i-container .i-bottom {
+    display: inline-block;
+}
+
+.i-container .i-top .name {
+    font-family: 'Rock Salt', cursive;
+    font-size: 11vh;
+}
+
+.i-container .i-bottom .position {
+    font-family:Tahoma, sans-serif;
+    font-size: 3vh;
+    padding-top: 30px;
+}
+
+/* About css */
+.about-container .about-top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding:20px;
+}
+
+.about-container .about-bottom-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding:20px;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.about-container .about-top-container .about-left {
+    padding: 20px;
+}
+
+.about-container .about-top-container .about-left .about-title {
+    font-size: 8vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.about-container .about-top-container .about-left .icons-container {
+    padding-top: 10px;
+}
+
+.about-container .about-top-container .about-left .icons-container img {
+    width: 4vh;
+    padding: 5px;
+    -webkit-transition: all .2s ease-in-out;   
+}
+.about-container .about-top-container .about-left .icons-container img:hover {
+    -webkit-transform: scale(1.2); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .2s ease-in-out; 
+   
+}
+
+.about-container .about-top-container img {
+    width: 45vh;
+    padding: 20px;
+    height: auto;
+    overflow: hidden;
+}
+
+.about-bottom-container .about-introduction {
+    width: 45vh;
+    padding: 20px;
+    font-family: Tahoma, sans-serif;
+    padding-right: 60px;
+    line-height: 1.5em
+}
+
+
+.about-container .about-bottom-container img {
+    width: 35vh;
+    transform: rotate(8deg);
+    padding: 20px;
+}
+
+/* Projects css: */
+.project-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.project-container .text-container {
+    color:#858585;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vh;
+    padding: 20px;
+   
+}
+
+.project-container .text-container span {
+    color: rgb(0, 0, 0);
+    font-family: Tahoma, sans-serif;
+    font-size: 3vh;
+    
 }
 
 /* projects container */
-.container {
+.image-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:flex-start;
-    align-content: center;
-
+    flex-wrap: nowrap;
     /* position the container absolute with the closest parent level has position(which is browser) */
-    position: relative;
-    top:10%;
-    left:10%;
-    right:10%;
+    justify-content: left; /* Centers items horizontally */
+    overflow-x: scroll;
+    width: 100%;
+    padding-bottom: 20px;
 }
 
 .image-box {
-    width: 30vh;
-    height: 30vh;
-    background-color: rgba(34, 34, 34, 0.46);
+    flex:0 0 auto;
+    width: 35vh;
+    height: 40vh;
+    /* background-color: rgba(34, 34, 34, 0.46); */
     margin: 20px;
     overflow: hidden; /* hidden image if over this box size(30vh ~ 30vh) */
      /* position the image-box naturally with same level siblings (which is description) */
     position:relative;
-    border-radius: 3%;
+    border-radius: 2%;
+    transition: transform .60s;
+    box-shadow: 0 4px 8px 0 rgba(170, 170, 170, 0), 0 7px 9px 0 rgba(109, 109, 109, 0.4);
 }
-
 
 .image-box:hover {
-/* add shadow */
-/* text-align: center; */
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 7px 9px 0 rgb(0 0 0 / 24%);
- /* delay show shadow 0.3 seconds */
-transition: 0.3s;
+    /* add shadow */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 7px 9px 0 rgb(0 0 0 / 40%);
+    /* delay show shadow 0.3 seconds */
+    transition: 0.3s;
+    transform: scale(1.1); 
 }
 
-/* when the image-box on hover model, the img should do... */
 .image-box:hover img { 
     filter: grayscale(0%); 
 }
 
-/* when the image-box on hover model, the description should do... */
 .image-box:hover .description {
     visibility: hidden;
 }
 
 .image-box img{
     width:100%;
-    filter: grayscale(100%); 
 }
 
-.image-box .description {
-    color: rgb(130, 166, 39);
-    font-family: 'Silkscreen', cursive;
-    font-size: 20px;
+.image-box .image-description {
     /* position the description absolute with the closest parent level has position(which is image-box) */
     position:absolute;
-    top: 18%;
-    left: 20%;
-    right: 20%;
-  }
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 
+.image-box .image-description .title {
+    color: rgb(0, 0, 0);
+    font-family:Tahoma, sans-serif;
+    font-size: 18px;
+}
+.image-box .image-description div {
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+    font-family:Tahoma, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+}
 
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #f3f3f3;
+}
 
+.image-box:hover .overlay {
+    opacity: 10;
+}
 
+/* skills css: */
+.skills-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
 
-  
+.skills-container .text-container {
+    color:#000000;
+    font-size: 3vh;
+    font-family:Tahoma, sans-serif;
+    padding: 20px;
+}
+
+.skills-container .icons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.skills-container .icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 9vh;
+}
+
+.skills-container .icons-container .icon-box img {
+    width: 6vh;
+    height: 6vh;
+    padding: 6px;
+    -webkit-transition: all .2s ease-in-out;  
+}
+
+.skills-container .icons-container .icon-box img:hover {
+    -webkit-transform: scale(1.2); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .2s ease-in-out;  
+}
+
+.skills-container .icons-container .icon-box div {
+    font-family: Poppins,sans-serif;
+    padding-top: 8px;
+}
+
+/* contact css: */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-icons-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.line {
+    border: #e3e3e3 0.8px solid;
+    margin-top: 40px;
+}
+
+.footer-icons-container {
+    display:flex;
+    justify-content: center;
+    padding:20px;
+}
+
+.footer-icons-container img {
+    width: 4vh;
+    padding: 9px;
+    -webkit-transition: all .2s ease-in-out;    
+}
+
+.footer-icons-container img:hover {  
+    -webkit-transform: scale(1.2); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .2s ease-in-out; 
+}
+
   
 
 

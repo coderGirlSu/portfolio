@@ -1,3 +1,4 @@
+import Contact from "./Contact";
 import Project from "./Project";
 
 function App() {
