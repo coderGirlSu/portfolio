@@ -34,7 +34,7 @@ const Project = () => {
       email_icon_alt:"email",
       email_icon_href:"mailto:suzhang79@gmail.com",
 
-      introduction: "Hi, my name is Su Zhang, a Joiner Software engineer, with 7 years of Building Architecture experience and a Graphic Design background, I successfully shift to a Software Engineer and completed a specialist software engineer diploma in late 2022. I believe this industry can better express my skills and perfectly transfer my experiences to the new fields.I like building things, solving problems and learning new technologies. I am a fast learner and a good team player. I am looking for a full-time software engineer role to start my new career.",
+      introduction: "Hi, I am Su Zhang, a Junior Software Engineer with seven years of Building Architecture experience and a Graphic Design background. In late 2022, I successfully shifted to a Software Engineer and completed a specialist software engineer diploma.  I enjoy a sense of achievement in solving these problems and building things. I believe this industry can better express my skills and transfer my experiences to new fields.",
     }
   ]
   const projects = [
@@ -73,14 +73,6 @@ const Project = () => {
       alt:"portfolio",
       href:"https://codergirlsu.github.io/src/",
     },
-    {
-      title: "Portfolio",
-      description: "CSS, HTML.",
-      image:"./images/portfolio.png",
-      alt:"portfolio",
-      href:"https://codergirlsu.github.io/src/",
-    },
-   
   ];
 
   const icons = [
