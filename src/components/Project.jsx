@@ -28,13 +28,14 @@ const Project = () => {
 
       resume_icon:"./images/resume.png",
       resume_icon_alt:"resume",
-      resume_icon_href:"https://pdfhost.io/v/NH5MMK40e_Su_Zhang_CV",
+      resume_icon_href:"./download/SuZhang-resume.pdf",
 
       email_icon:"./images/email.png",
       email_icon_alt:"email",
       email_icon_href:"mailto:suzhang79@gmail.com",
 
-      introduction: "Hi, I am Su Zhang, a Junior Software Engineer with seven years of Building Architecture experience and a Graphic Design background. In late 2022, I successfully shifted to a Software Engineer and completed a specialist software engineer diploma.  I enjoy a sense of achievement in solving these problems and building things. I believe this industry can better express my skills and transfer my experiences to new fields.",
+      introduction1: "Hi, I am Su Zhang, a junior Software Engineer. I find great satisfaction in solving problems and building things. I'm now open to new opportunities after recently completing an internship at SafetyCulture.",
+      introduction2: "In late 2022, I successfully transitioned to the field of Software Engineering and completed a specialist software engineering diploma after seven years of experience in Building Architecture and a background in Graphic Design. The software industry allows me to better showcase my skills and apply my experiences to new domains.",
     }
   ]
   const projects = [
@@ -219,7 +220,7 @@ const Project = () => {
               <img src={about.top_photo} alt={about.top_photo_alt}></img>
             </div>
             <div className="about-bottom-container">
-              <div className="about-introduction">{about.introduction}</div>
+              <div className="about-introduction">{about.introduction1}<br></br><br></br>{about.introduction2}</div>
               <img src={about.bottom_photo} alt={about.bottom_photo_alt}></img>
             </div>
           </div>
