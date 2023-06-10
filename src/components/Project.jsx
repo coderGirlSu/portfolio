@@ -44,7 +44,7 @@ const Project = () => {
       description: "MongoDB, Express, React, Node.js, Rest, Firebase, AWS EC2.",
       image: "./images/tiktalk.png",
       alt: "portfolio",
-      href: "https://tik-talk.codergirlsu.dev",
+      href: "https://tiktalk.codergirlsu.dev",
     },
     {
       title: "Hackathon Emoji Search App",
@@ -61,11 +61,11 @@ const Project = () => {
       href:"https://fruit.codergirlsu.dev",
     },
     {
-      title: "Two-Side Marketplace",
-      description: "Ruby On Rails, PostgreSQL, Heroku.",
+      title: "Two-Sided Marketplace",
+      description: "Ruby, Ruby On Rails, PostgreSQL, Heroku.",
       image:"./images/marketplace.png",
       alt:"marketplace",
-      href:"https://codergirlsu.github.io/src/",
+      href:"https://marketplace.codergirlsu.github.io/src/",
     },
     {
       title: "Portfolio",
