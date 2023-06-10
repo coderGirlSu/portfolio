@@ -105,6 +105,14 @@
     padding: 20px;
 }
 
+.about-bottom-container .about-introduction a {
+    text-decoration: none !important;
+}
+
+.about-bottom-container .about-introduction a:active {
+    color: rgb(3, 167, 204);
+}
+
 /* Projects css: */
 .project-container {
     display:flex;

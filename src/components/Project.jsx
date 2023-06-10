@@ -4,7 +4,7 @@ const Project = () => {
     {
       name: "Su Zhang",
       position: "Full-Stack Software Engineer",
-      photo: "./images/su.png",
+      photo: "./images/su-small.jpg",
       alt: "Su Zhang",
     },
   ]
@@ -34,8 +34,10 @@ const Project = () => {
       email_icon_alt:"email",
       email_icon_href:"mailto:suzhang79@gmail.com",
 
-      introduction1: "Hi, I am Su Zhang, a junior Software Engineer. I find great satisfaction in solving problems and building things. I'm now open to new opportunities after recently completing an internship at SafetyCulture.",
+      introduction1: "Hi, I am Su Zhang, a junior Software Engineer. I find great satisfaction in solving problems and building things. I'm now open to new opportunities after recently completing an internship at ",
       introduction2: "In late 2022, I successfully transitioned to the field of Software Engineering and completed a specialist software engineering diploma after seven years of experience in Building Architecture and a background in Graphic Design. The software industry allows me to better showcase my skills and apply my experiences to new domains.",
+      safetyCulture_href:"https://safetyculture.com/",
+      safetyCulture_alt:"SafetyCulture",
     }
   ]
   const projects = [
@@ -220,7 +222,7 @@ const Project = () => {
               <img src={about.top_photo} alt={about.top_photo_alt}></img>
             </div>
             <div className="about-bottom-container">
-              <div className="about-introduction">{about.introduction1}<br></br><br></br>{about.introduction2}</div>
+              <div className="about-introduction">{about.introduction1}<a target="_blank" href={about.safetyCulture_href} alt={about.safetyCulture_alt}>SafetyCulture.</a><br></br><br></br>{about.introduction2}</div>
               <img src={about.bottom_photo} alt={about.bottom_photo_alt}></img>
             </div>
           </div>
