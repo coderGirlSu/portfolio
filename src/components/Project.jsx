@@ -179,7 +179,7 @@ const Project = () => {
       alt:"AutoCAD",
     },
     { title:"Illustrator",
-      image:"./images/illustrator.png",
+      image:"./images/Illustrator.png",
       alt:"Illustrator",
     },
     { title:"Photoshop",
