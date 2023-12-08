@@ -41,9 +41,7 @@ const Project = () => {
         "https://www.credly.com/badges/4519b7fc-ecbe-419c-8d2c-948bd3cafd34/public_url",
 
       introduction1:
-        "Hi, I am Su Zhang, a junior Software Engineer. I find great satisfaction in solving problems and building things. I'm now open to new opportunities after recently completing an internship at ",
-      introduction2:
-        "In late 2022, I successfully transitioned to the field of Software Engineering and completed a specialist software engineering diploma after seven years of experience in Building Architecture and a background in Graphic Design. The software industry allows me to better showcase my skills and apply my experiences to new domains.",
+        "Hi, I am Su Zhang, a Software Engineer with one year of experience. I find great satisfaction in solving problems and building things, and my curiosity about new technologies drives me to keep learning and improving.",
       safetyCulture_href: "https://safetyculture.com/",
       safetyCulture_alt: "SafetyCulture",
     },
@@ -212,16 +210,13 @@ const Project = () => {
             <div className="about-bottom-container">
               <div className="about-introduction">
                 {about.introduction1}
-                <a
+                {/* <a
                   target="_blank"
                   href={about.safetyCulture_href}
                   alt={about.safetyCulture_alt}
                 >
                   SafetyCulture.
-                </a>
-                <br></br>
-                <br></br>
-                {about.introduction2}
+                </a> */}
               </div>
               <img src={about.bottom_photo} alt={about.bottom_photo_alt}></img>
             </div>
