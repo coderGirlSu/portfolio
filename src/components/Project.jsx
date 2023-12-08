@@ -16,8 +16,6 @@ const Project = () => {
       title2: "About Me",
       top_photo: "./images/2.jpg",
       top_photo_alt: "Su Zhang",
-      bottom_photo: "./images/10.png",
-      bottom_photo_alt: "Su Zhang",
 
       linkedin_icon: "./images/linkdein.png",
       linkedin_icon_alt: "linkedin",
@@ -40,10 +38,8 @@ const Project = () => {
       aws_icon_href:
         "https://www.credly.com/badges/4519b7fc-ecbe-419c-8d2c-948bd3cafd34/public_url",
 
-      introduction1:
-        "Hi, I am Su Zhang, a Software Engineer with one year of experience. I find great satisfaction in solving problems and building things, and my curiosity about new technologies drives me to keep learning and improving.",
-      safetyCulture_href: "https://safetyculture.com/",
-      safetyCulture_alt: "SafetyCulture",
+      introduction:
+        "Hi👋, I am Su Zhang, a Software Engineer with one year of experience. I find great satisfaction in solving problems and building things, and my curiosity about new technologies drives me to keep learning and improving.",
     },
   ];
   const projects = [
@@ -169,8 +165,8 @@ const Project = () => {
       {about.map((about, index) => {
         return (
           <div key={index} className="about-container">
-            <div className="about-top-container">
-              <div className="about-left">
+            
+              <div className="about-left-container">
                 <div className="about-title">
                   {about.title1}
                   <div>{about.title2}</div>
@@ -204,22 +200,14 @@ const Project = () => {
                     <img src={about.aws_icon} alt={about.aws_icon_alt}></img>
                   </a>
                 </div>
+                <div className="about-introduction">
+                  {about.introduction}
+                </div>
               </div>
-              <img src={about.top_photo} alt={about.top_photo_alt}></img>
-            </div>
-            <div className="about-bottom-container">
-              <div className="about-introduction">
-                {about.introduction1}
-                {/* <a
-                  target="_blank"
-                  href={about.safetyCulture_href}
-                  alt={about.safetyCulture_alt}
-                >
-                  SafetyCulture.
-                </a> */}
+
+              <div className="about-right-container">
+                <img src={about.top_photo} alt={about.top_photo_alt}></img>
               </div>
-              <img src={about.bottom_photo} alt={about.bottom_photo_alt}></img>
-            </div>
           </div>
         );
       })}

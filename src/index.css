@@ -1,14 +1,13 @@
-/* About me css: */
+/* cover css: */
 .i-container {
     display:flex;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-    height: 100vh;
+    height: 105vh;
     position:relative;
     justify-content: center;
-
 }
 
 .i-container .i-top {
@@ -20,6 +19,7 @@
 .i-container .i-middle {
     padding: 30px;
 }
+
 .i-container .i-middle img {
     width: 45vh;
     transform: rotate(8deg);
@@ -41,72 +41,51 @@
 }
 
 /* About css */
-.about-container .about-top-container {
+.about-container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding:20px;
-}
-
-.about-container .about-bottom-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    padding:20px;
-    align-items: flex-start;
     margin-bottom: 50px;
 }
 
-.about-container .about-top-container .about-left {
-    padding: 20px;
+.about-container .about-left-container {
+    padding-bottom: 20px;
 }
 
-.about-container .about-top-container .about-left .about-title {
+.about-container .about-left-container .about-title {
     font-size: 6vh;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Tahoma, sans-serif;
 }
-.about-container .about-top-container .about-left .icons-container {
+.about-container .about-left-container .icons-container {
     padding-top: 10px;
 }
 
-.about-container .about-top-container .about-left .icons-container img {
+.about-container .about-left-container .icons-container img {
     width: 4vh;
     padding: 5px;
     -webkit-transition: all .2s ease-in-out;   
 }
 
-.about-container .about-top-container .about-left .icons-container img:hover {
+.about-container .about-left-container .icons-container img:hover {
     -webkit-transform: scale(1.2); /* Webkit Nightlies & Chrome Canary */
     -webkit-transition: all .2s ease-in-out; 
    
 }
+.about-container .about-left-container .about-introduction {
+    max-width: 45vh;
+    padding-top:10px;
+    font-family: Tahoma, sans-serif;
+    line-height: 1.5em;
+    font-size: large;
+}
 
-.about-container .about-top-container img {
-    width: 45vh;
-    padding: 20px;
+.about-container .about-right-container img {
+    max-width: 55vh;
+    width:100%;
     height: auto;
     overflow: hidden;
-}
-
-.about-bottom-container .about-introduction {
-    width: 45vh;
-    padding: 20px;
-    font-family: Tahoma, sans-serif;
-    padding-right: 60px;
-    line-height: 1.5em
-}
-
-.about-container .about-bottom-container img {
-    width: 35vh;
-    transform: rotate(8deg);
-    padding: 20px;
-}
-
-.about-bottom-container .about-introduction a:active {
-    color: rgb(3, 167, 204);
 }
 
 /* Projects css: */
@@ -124,14 +103,12 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 3vh;
     padding: 20px;
-   
 }
 
 .project-container .text-container span {
     color: rgb(0, 0, 0);
     font-family: Tahoma, sans-serif;
     font-size: 3vh;
-    
 }
 
 /* projects container */
@@ -195,6 +172,7 @@
     font-family:Tahoma, sans-serif;
     font-size: 18px;
 }
+
 .image-box .image-description div {
     padding-top: 10px;
     color: rgb(0, 0, 0);
